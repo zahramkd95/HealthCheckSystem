@@ -1,11 +1,14 @@
 import unittest
-from unittest.mock import patch, mock_open
-import yaml
-from main import load_config, check_health, monitor_endpoints
-from logger import logging
-import requests
+from unittest.mock import mock_open, patch
 
-#TestLoadConfig checks if load config is compatible and if it raises appropriate Exceptions
+import requests
+import yaml
+
+from logger import logging
+from main import check_health, load_config, monitor_endpoints
+
+
+# TestLoadConfig checks if load config is compatible and if it raises appropriate Exceptions
 class TestLoadConfig(unittest.TestCase):
 
     @patch("builtins.open", new_callable=mock_open, read_data="key: value")
@@ -33,12 +36,11 @@ class TestLoadConfig(unittest.TestCase):
             result = load_config("invalid.yaml")
             self.assertIsNone(result)
             mock_log_error.assert_called_once_with(
-                "An error occurred while loading the config: "
-                "Invalid YAML content"
+                "An error occurred while loading the config: " "Invalid YAML content"
             )
 
 
-#TestCheckHealth checks behaviors for various latency and response code simulations
+# TestCheckHealth checks behaviors for various latency and response code simulations
 class TestCheckHealth(unittest.TestCase):
 
     @patch("main.requests.request")
@@ -53,7 +55,6 @@ class TestCheckHealth(unittest.TestCase):
             result = check_health(endpoint)
             self.assertEqual(result, "UP")
 
-
     @patch("main.requests.request")
     def test_check_health_down_due_to_status_code(self, mock_request):
         # Test when the endpoint is DOWN due to status code
@@ -65,7 +66,6 @@ class TestCheckHealth(unittest.TestCase):
         with patch("time.time", side_effect=[0, 0.3]):  # Simulate latency of 300ms
             result = check_health(endpoint)
             self.assertEqual(result, "DOWN")
-
 
     @patch("main.requests.request")
     def test_check_health_down_due_to_latency(self, mock_request):
@@ -86,9 +86,10 @@ class TestCheckHealth(unittest.TestCase):
         result = check_health(endpoint)
         self.assertEqual(result, "DOWN")
 
-#TestMonitorEndpoints checks if availability % is accurate for each domain
+
+# TestMonitorEndpoints checks if availability % is accurate for each domain
 class TestMonitorEndpoints(unittest.TestCase):
-    
+
     @patch("main.load_config")
     @patch("main.check_health")
     @patch("main.logging.info")

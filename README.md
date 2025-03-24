@@ -1,14 +1,14 @@
 __HealthCheckSystem Setup Instructions__
 
-Before reading further, it is highly recommended to use a virtual environment (venv). Please read the following [guide](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) for setup and activation based on your operating system. 
+Before reading further, it is highly recommended to use a virtual environment (venv). Please read the following [guide](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) for setup and activation based on your operating system.
 
 Please note. All of the commands listed are relative to the root folder.
 
-*__Step 1:__*  Install requirements 
+*__Step 1:__*  Install requirements
 
     pip install -r requirements.txt
 
-*__Step 2:__*  Make sure to run the following command to run the health check 
+*__Step 2:__*  Make sure to run the following command to run the health check
 
     python main.py /path/to/config.yaml
 
