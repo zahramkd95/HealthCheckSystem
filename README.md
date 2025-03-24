@@ -21,22 +21,26 @@ Please note. All of the commands listed are relative to the root folder.
 
 *Expected Sample output for `sample_input_yaml`*
 ```
-2025-03-23 13:57:14,640 - INFO - fetch.com has 67% availability percentage
-2025-03-23 13:57:14,640 - INFO - www.fetchrewards.com has 0% availability percentage
-2025-03-23 13:57:14,640 - INFO - --- Retrying in 15 seconds... ---
-2025-03-23 13:57:30,815 - INFO - fetch.com has 67% availability percentage
-2025-03-23 13:57:30,815 - INFO - www.fetchrewards.com has 0% availability percentage
-2025-03-23 13:57:30,815 - INFO - --- Retrying in 15 seconds... ---
+2025-03-23 23:18:39,233 - INFO - main.py - 99 - fetch.com has 67% availability percentage
+2025-03-23 23:18:39,233 - INFO - main.py - 99 - www.fetchrewards.com has 0% availability percentage
+2025-03-23 23:18:39,233 - INFO - main.py - 101 - --- Retrying in 15 seconds... ---
+2025-03-23 23:18:55,520 - INFO - main.py - 99 - fetch.com has 67% availability percentage
+2025-03-23 23:18:55,520 - INFO - main.py - 99 - www.fetchrewards.com has 0% availability percentage
+2025-03-23 23:18:55,520 - INFO - main.py - 101 - --- Retrying in 15 seconds... ---
+2025-03-23 23:19:11,429 - INFO - main.py - 99 - fetch.com has 67% availability percentage
+2025-03-23 23:19:11,430 - INFO - main.py - 99 - www.fetchrewards.com has 33% availability percentage
+2025-03-23 23:19:11,430 - INFO - main.py - 101 - --- Retrying in 15 seconds... ---
 
 ```
 
 *Expected Sample output for `sample_input_2_yaml`*
 
 ```
-2025-03-23 13:56:16,466 - INFO - dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com has 25% availability percentage
-2025-03-23 13:56:16,466 - INFO - --- Retrying in 15 seconds... ---
-2025-03-23 13:56:33,179 - INFO - dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com has 25% availability percentage
-2025-03-23 13:56:33,180 - INFO - --- Retrying in 15 seconds... --- 
+2025-03-23 23:19:53,749 - INFO - main.py - 99 - dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com has 25% availability percentage
+2025-03-23 23:19:53,749 - INFO - main.py - 101 - --- Retrying in 15 seconds... ---
+2025-03-23 23:20:10,345 - INFO - main.py - 99 - dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com has 25% availability percentage
+2025-03-23 23:20:10,346 - INFO - main.py - 101 - --- Retrying in 15 seconds... ---
+2025-03-23 23:20:27,234 - INFO - main.py - 99 - dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com has 25% availability percentage
 ```
 
 __Testing & Development Instructions__
