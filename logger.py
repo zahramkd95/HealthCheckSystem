@@ -1,6 +1,6 @@
 import logging
 
-# Adding logger to post to console o/p with clear timestamps,filenames, line numbers,levels and messages. 
+# Adding logger to post to console o/p with clear timestamps,filenames, line numbers,levels and messages.
 
 logging.basicConfig(
     level=logging.INFO,  # Minimum level to log
