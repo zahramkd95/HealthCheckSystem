@@ -14,12 +14,12 @@ Please note. All of the commands listed are relative to the root folder.
 
   For example:
 
-    python main.py sample_input/sample_input_yaml
+    python main.py sample_input/example_1.yaml
 
 
-> **_NOTE:_**  If you would like to run this command against a sample yaml, two seperate yaml files are added to the `sample_input` folder [sample_input_yaml and sample_input_2_yaml]
+> **_NOTE:_**  If you would like to run this command against a sample yaml, two seperate yaml files are added to the `sample_input` folder [example_1.yaml and example_2.yaml]
 
-*Expected Sample output for `sample_input_yaml`*
+*Expected Sample output for `example_1.yaml`*
 ```
 2025-03-23 23:18:39,233 - INFO - main.py - 99 - fetch.com has 67% availability percentage
 2025-03-23 23:18:39,233 - INFO - main.py - 99 - www.fetchrewards.com has 0% availability percentage
@@ -33,7 +33,7 @@ Please note. All of the commands listed are relative to the root folder.
 
 ```
 
-*Expected Sample output for `sample_input_2_yaml`*
+*Expected Sample output for `example_2.yaml`*
 
 ```
 2025-03-23 23:19:53,749 - INFO - main.py - 99 - dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com has 25% availability percentage
