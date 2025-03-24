@@ -26,6 +26,7 @@ def load_config(file_path):
             return yaml.safe_load(file)
     except Exception as e:
         logging.error(f"An error occurred while loading the config: {e}")
+        raise
 
 
 # Function to perform health checks
