@@ -43,7 +43,7 @@ __Testing & Development Instructions__
 
 - To run unit tests, you can run the follow command:
 
-    `python /path/to/test_main.py`
+    `python test_main.py`
 
 
 - Setup precommit hooks by installing pre-commit. This will set up the hooks so that black, flake8 and other formatting tools will run automatically on git commit (before committing any changes)
